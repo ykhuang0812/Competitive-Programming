@@ -49,6 +49,7 @@ Example:
 * [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment5.cpp)
 
 想法1(WA)：用一個tree去儲存string出現的次數，在經過每個node時若已經出現過就把它+1
+
 Why WA? ：這個方法錯誤點在於，若長度長的先新增則長度比他短的會沒有新增到
 ```
 Example:
