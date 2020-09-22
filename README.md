@@ -44,7 +44,7 @@ Example:
 然後再push進去並在此時更新最大值。
 
 
-## Assignmet4 - Binary String
+## Assignmet5 - Binary String
 * [Problem](https://oj.nctu.me/problems/825/)
 * [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment5.cpp)
 
