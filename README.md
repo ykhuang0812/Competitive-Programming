@@ -1,1 +1,35 @@
 # Competitive-Programming
+* Note: Please use your Google or E3 account to use Oauth for login
+
+## Assignment1 - Big Integer
+* [Problem](https://oj.nctu.me/problems/819/)
+* [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment1.cpp)
+
+想法：因為C++不支援Big Integer所以就要用字串的方法來處理（當然也可以使用python比較輕鬆）
+
+
+## Assignment2 - Expression
+* [Problem](https://oj.nctu.me/problems/820/)
+* [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment2.cpp)
+
+想法：此題是給定一字串 ex.1+2*3 要輸出9，所以在每次讀到operator時將現有儲存結果與當前讀到的進行運算
+
+## Assignment3 - Mex
+* [Problem](https://oj.nctu.me/problems/822/)
+* [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment3.cpp)
+
+想法：我在hashmap中只儲存 l ~ l+n 之間的值，因為要出現最小的一定只會在個範圍之中
+
+## Assignmet4 - Time limit exceed 
+* [Problem](https://oj.nctu.me/problems/823/)
+* [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment4.cpp)
+
+想法：此題是要先看懂他的code在幹嘛，我們會發現他是要找給定一陣列中最長遞增子序列的長度，所以我就用一個stack來記錄，從陣列的最後面開始，若比stack的top還大就一直pop直到我比top小，
+然後再push進去並在此時更新最大值。
+
+
+## Assignmet4 - Binary String
+* [Problem](https://oj.nctu.me/problems/825/)
+* [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment5.cpp)
+
+想法：
