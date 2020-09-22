@@ -48,7 +48,29 @@ Example:
 * [Problem](https://oj.nctu.me/problems/825/)
 * [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment5.cpp)
 
-想法：用一個tree出儲存string出現的次數，而在encode的時候只要把自己的children全部加起來再加上自己就是答案
+想法1(WA)：用一個tree去儲存string出現的次數，在經過每個node時若已經出現過就把它+1
+Why WA? ：這個方法錯誤點在於，若長度長的先新增則長度比他短的會沒有新增到
+```
+Example:
+Input:
+00
+0010
+001
+
+    0          0          0
+   /          /          /     
+  0          0          0
+ /          /          /
+1    -->   2    -->   3
+            \          \
+             0          1
+            /          /
+           1          1 
+    
+此時發現decode時 001 為 1 但實際上要是2
+```
+
+想法2(AC)：一樣是用一個tree去儲存，不過在經過每個node時不+1，只增加自己出現的次數，最後decode的答案就是自己的 children總和+自己
 ```
 Example:
 Input:
