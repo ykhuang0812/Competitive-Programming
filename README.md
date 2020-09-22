@@ -24,7 +24,23 @@
 * [Problem](https://oj.nctu.me/problems/823/)
 * [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment4.cpp)
 
-想法：此題是要先看懂他的code在幹嘛，我們會發現他是要找給定一陣列中最長遞增子序列的長度，所以我就用一個stack來記錄，從陣列的最後面開始，若比stack的top還大就一直pop直到我比top小，
+```
+Example:
+5 10 7 8 12
+
+他是在一個陣列中從每個數字當起點用greedy的方式找到當前的遞增序列
+例如5就是
+5 10 12 而並非 5 7 8 12
+
+所以我們的output會是在
+5 10 12
+10 12
+7 8 12
+8 12
+中找最長的那個，也就是5 10 12 or 7 8 12 （長度為3）
+```
+
+想法：此題是要先看懂他的code在幹嘛，我就用一個stack來記錄，從陣列的最後面開始，若比stack的top還大就一直pop直到我比top小，
 然後再push進去並在此時更新最大值。
 
 
