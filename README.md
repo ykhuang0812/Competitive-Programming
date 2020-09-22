@@ -48,4 +48,31 @@ Example:
 * [Problem](https://oj.nctu.me/problems/825/)
 * [Code](https://github.com/ykhuang0812/Competitive-Programming/blob/master/Spring_2019/Assignment5.cpp)
 
-想法：
+想法：用一個tree出儲存string出現的次數，而在encode的時候只要把自己的children全部加起來再加上自己就是答案
+```
+Example:
+Input:
+00
+001
+010
+0010
+00
+
+Tree:  往左是0，往右是1
+
+         0 
+        /   
+       0     
+     /   \  
+    2     0 
+     \   /
+      1 1 
+     /
+    1
+    
+Decode:
+00 = 4
+001 = 2
+0010 = 1
+010 = 1
+```
